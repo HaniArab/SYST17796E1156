@@ -10,6 +10,7 @@ public class Main {
             
         System.out.println("Average of the Weather Temperatures Java Program");    
         System.out.println("Average: " + calcAvg(temps));
+        System.out.println("Max temp: " + calcMax(temps));
         
     }
     
@@ -27,5 +28,13 @@ public class Main {
         }
         return sum / count;
     }
-
+     public static double calcMax(double[] temps) {
+        double max = temps[0];
+        for(int i = 0; i < temps.length; i++) {
+            if(temps[i] > max) {
+                max = temps[i];
+            }
+        }
+        return max;
+    }
 }
