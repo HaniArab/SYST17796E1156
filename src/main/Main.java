@@ -7,6 +7,8 @@ public class Main {
 
       public static void main(String[] args) {
         double[] temps = new double[] {-60, -50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 45, 50, 60};
+            
+        System.out.println("Average of the Weather Temperatures Java Program");    
         System.out.println("Average: " + calcAvg(temps));
         
     }
